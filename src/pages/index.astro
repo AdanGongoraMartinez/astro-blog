@@ -1,5 +1,8 @@
 ---
-import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import "../styles/global.css"
+
+const pageTitle = "Home Page";
 ---
 
 <html lang="en">
@@ -12,6 +15,7 @@ import '../styles/global.css';
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>My astro blog</h1>
+    <Navigation />
+    <h1>{pageTitle}</h1>
 	</body>
 </html>
